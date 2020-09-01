@@ -32,7 +32,7 @@ class Solution:
             if head == None:
                 return prev
 
-            temp = head.next
+            temp = head.next     #split up the array and save the consequent nodes.
             head.next = prev
             return helper(temp, head)
 
